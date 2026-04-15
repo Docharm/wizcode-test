@@ -16,7 +16,7 @@ resource "aws_s3_bucket_public_access_block" "bad_block" {
   restrict_public_buckets = false
 }
 
-# 모든 IP 허용 (0.0.0.0/0)
+# 모든 IP 허용
 resource "aws_security_group" "bad_sg" {
   name = "allow_all"
 
